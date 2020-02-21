@@ -1,15 +1,15 @@
-//一个简单的c++的库，用于封装歪比巴卜加解密  
+//涓�涓畝鍗曠殑c++鐨勫簱锛岀敤浜庡皝瑁呮姣斿反鍗滃姞瑙ｅ瘑  
 #ifndef CODE_WaiBiBaBu
 	#define CODE_WaiBiBaBu
 	#include<cstring>
-	char enCODE_WaiBi[]="歪比";
-	char enCODE_BaBu[]="巴卜";
+	char enCODE_WaiBi[]="姝瘮";
+	char enCODE_BaBu[]="宸村崪";
 	void enCODE_reduce(char *text_source)
 	{
 	}
 	char *encode_wbbb(char *text_source)
 	{
-		static char enCode_ret[100000];
+		static char enCode_ret[10000000];
 		memset(enCode_ret,0,sizeof(enCode_ret));
 		int st=0;
 		for(int i=0;i<strlen(text_source);i++)
@@ -37,7 +37,7 @@
 	}
 	char *decode_wbbb(char *text_out)
 	{
-		static char deCode_ret[100000];
+		static char deCode_ret[10000000];
 		memset(deCode_ret,0,sizeof(deCode_ret));
 		int st=0;
 		for(int i=0;i<strlen(text_out);i+=32)
