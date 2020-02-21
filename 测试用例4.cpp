@@ -7,12 +7,11 @@ using namespace std;
 int main()
 {
 	char Input_text[200000]; 
-	printf("输入你要编码的字符串(一行):");
+	printf("输入你要解码的字符串(一行):");
 	gets(Input_text);
-	printf("%s",encode_wbbb(Input_text));
+	printf("%s",decode_wbbb(Input_text));
 	freopen("out_put.txt","w",stdout);
-	printf("%s",encode_wbbb(Input_text));
-	fclose(stdout); 
-	getchar();
+	printf("%s",decode_wbbb(Input_text));
+	fclose(stdout);
 	return 0;
 } 
